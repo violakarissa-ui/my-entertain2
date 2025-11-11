@@ -1,0 +1,130 @@
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* WARNA UTAMA */
+:root {
+  --merah: #e50914;
+  --hitam: #000000;
+  --abu: #1a1a1a;
+  --putih: #ffffff;
+}
+
+/* HEADER */
+header {
+  background-color: var(--merah);
+  color: var(--putih);
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px rgba(229, 9, 20, 0.4);
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--hitam);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--putih);
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.3s;
+  position: relative;
+  padding: 6px 10px;
+}
+
+/* GARIS MERAH DI BAWAH LINK SAAT DIHOVER */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--merah);
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.login-btn:hover {
+  background-color: #ff1f1f;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(to bottom right, var(--hitam), var(--abu));
+  color: var(--putih);
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(229, 9, 20, 0.8);
+}
+
+.hero span {
+  color: var(--merah);
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 35px;
+  color: #ddd;
+}
+
+/* TOMBOL HERO */
+.hero-btn {
+  background-color: var(--merah);
+  color: var(--putih);
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
+
+.hero-btn:hover {
+  background-color: #ff1f1f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.7);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--hitam);
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  border-top: 2px solid var(--merah);
+}
