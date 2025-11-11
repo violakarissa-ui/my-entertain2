@@ -11,17 +11,33 @@ body { font-family: 'Poppins', sans-serif; background-color: #000; color: #fff; 
   --muted: #bfbfbf;
 }
 
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* WARNA UTAMA */
+:root {
+  --merah: #e50914;
+  --hitam: #000000;
+  --abu: #1a1a1a;
+  --putih: #ffffff;
+}
+
 /* HEADER */
-header{
-  background: var(--merah);
-  color: #fff;
+header {
+  background-color: var(--merah);
+  color: var(--putih);
   text-align: center;
-  padding: 18px 10px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px 0;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  box-shadow: 0 4px 18px rgba(229,9,20,0.25);
+  box-shadow: 0 3px 10px rgba(229, 9, 20, 0.4);
 }
 
 /* NAVBAR */
